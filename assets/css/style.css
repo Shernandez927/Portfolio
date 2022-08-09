@@ -1,3 +1,42 @@
+:root {
+    --lavender: #d5d6ea;
+    --lilac: #f6ecf5;
+    --mint: #d9ecdc;
+    --coral: #f5d5cb;
+
+}
+
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+body {
+    position: relative;
+    font-size: 18px;
+    background-color: var(--lavender);
+}
+
+header {
+    background-color: var(--mint);
+    
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+}
+
+span {
+    color: red;
 }
