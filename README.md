@@ -31,7 +31,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-Credits in progress
+- Avatar made with Avatoon
+
 
 ## License
 

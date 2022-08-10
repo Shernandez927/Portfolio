@@ -1,15 +1,18 @@
+/* Color variables */
 :root {
-    --lavender: #d5d6ea;
-    --lilac: #f6ecf5;
-    --mint: #d9ecdc;
+    --lavender: #ecd2eb;
+    --lilac: #fde3ee;
+    --mint: #c7eedb;
     --coral: #f5d5cb;
+    --border: 3px solid black;
 
 }
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
 
 }
 
@@ -17,21 +20,96 @@ body {
     position: relative;
     font-size: 18px;
     background-color: var(--lavender);
+    margin: 0;
 }
 
 header {
-    background-color: var(--mint);
-    
-    height: 100%;
-}
-
-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: right;
+    align-items: center;
+    background: var(--mint);
+    border-bottom: var(--border);
+    padding: 20px;
 }
+
+.navlinks {
+    flex-wrap: wrap;
+    margin-left: 25px;
+
+    
+}
+
+header nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+   
+}
+
+figure {
+    padding: 10px;
+    float: left;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+
+}
+
+
+/* Styles avatar with rounded border */
+#avatar {
+    border: var(--border);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+main {
+    margin: auto;
+}
+
+.projects > a {
+    margin: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#fanlink {
+    background-image: url(../images/Fanpageoverlay.jpeg);
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 260px;
+    border: var(--border);
+}
+
+#rflink {
+    background-image: url(../images/optimization.jpeg);
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 260px;
+    border: var(--border);
+
+}
+
+.wiplink {
+    background-image: url(../images/WIP.jpeg);
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 260px;
+    border: var(--border);
+}
+
+
 
 footer {
     text-align: center;
@@ -39,4 +117,28 @@ footer {
 
 span {
     color: red;
+}
+
+
+/* Media queries for viewport responsiveness */
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    figure, main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectimg {
+        flex-basis: 100%;
+        min-height: 150px;
+        flex-direction: column;
+    }
+
 }

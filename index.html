@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title> Shelby Hernandez | Portfolio </title>
     </head>
@@ -11,29 +11,78 @@
     <body>
         <!--Navigation links to different aspects of portfolio page-->
         <header>
-            <h1> 👋 I'm Shelby </h1>
-            <nav>
-                <a href="#about">About Me 🧸</a>
-                <a href="#projects">Projects 💻</a>
-                <a href="https://github.com/Shernandez927"target="_blank">Github 🐱</a>
-                <a href="#contact">Contact Me 🔔</a>
-            </nav>
 
+            <section class="intro">
+            <h1> 👋 I'm Shelby </h1>
+            <h2>Aspiring Web Developer</h2>
+            </section>
+
+            <nav class="navlinks">
+                <ul>
+                <li><a href="#about">About Me 🧸</a></li>
+                <li><a href="#projects">Projects 💻</a></li>
+                <li><a href="#contact">Contact Me 🔔</a></li>
+                </ul>
+
+            </nav>
         </header>
 
-        <main>
+        
         <!--Figure element with description about me and portfolio page-->
             <figure id="about">
-                <h2>Web Developer</h2>
-                <figcaption>Hi, I'm Shelby. I'm a web developer still learning the ropes. This Portfolio page serves as a presentation of my current work.</figcaption>
+                <h2>About Me</h2>
+                <img src="./assets/images/avatar.png" alt="avatar image" id="avatar"/>
+                <figcaption>Hi, I'm Shelby. I'm an aspiring web developer still learning the ropes. This Portfolio page serves as a presentation of my current and upcoming work.</figcaption>
             </figure>
-            <!--Section of current portfolio projects-->
-            <section>
-                <h2>My Projects</h2>
+            
+        <!--Main section of current portfolio projects-->
+            
+        <main>
+            
+            <h2>My Current Projects</h2>
+
+            <section class="projects">
+            
+                <a href="https://shernandez927.github.io/big-fan/"target="_blank" id="fanlink">
+                    <div class="imgoverlay">
+                    <h3>My First Webpage</h3>
+                    </div>
+                    
+                </a>
+    
+                <a href="https://shernandez927.github.io/RefactoringAssignment/"target="_blank" id="rflink">
+                    <div class="imgoverlay">
+                    <h3>My First Refactor</h3>
+                    </div>
+                    
+                </a>
+
+                <a href="#" class="wiplink">
+                    <div class="imgoverlaydark">
+                    <h3>Coming Soon</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="wiplink">
+                    <div class="imgoverlaydark">
+                    <h3>Coming Soon</h3>
+                    </div>
+                </a>
+        
+            </section>
+
+
+            <!--Contact Section-->
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <address>
+                    <a href="mailto:shelbyhernandez9876@yahoo.com">Email Me ✉️ |</a>
+                    <a href="https://github.com/Shernandez927"target="_blank"> Github 🐱 |</a>
+                    <a href="tel: 888-888-8888"> Mobile 📲</a>
+                </address>
             </section>
 
         </main>
-        
         <!--Footer with copyright-->
         <footer>
             <p> © 2022 Made with <span>❤</span> by Shelby Hernandez </p>
