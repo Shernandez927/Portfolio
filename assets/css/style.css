@@ -3,7 +3,7 @@
     --lavender: #ecd2eb;
     --lilac: #fde3ee;
     --mint: #c7eedb;
-    --coral: #f5d5cb;
+    --coral: #F8C8DC;
     --border: 3px solid black;
 
 }
@@ -28,31 +28,48 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background: var(--mint);
+    background-image: url(../images/watercolor.jpeg);
+    background-size: cover;
     border-bottom: var(--border);
     padding: 20px;
 }
 
-.navlinks {
-    flex-wrap: wrap;
-    margin-left: 25px;
-
-    
+h1 {
+   font-size: 2.5rem;
 }
 
-header nav ul li {
-    text-transform: uppercase;
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.navlinks ul {
+    display: flex;
+    padding: 0;
+
+}
+.navlinks li {
     list-style: none;
-    display: inline-block;
-   
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--mint);
 }
 
 figure {
-    padding: 10px;
-    float: left;
-    height: 100%;
-    width: 30%;
+    padding: 40px;
+    margin: 20px;
     text-align: center;
+    background-color: var(--coral);
+    border: var(--border);
 
 }
 
@@ -64,57 +81,78 @@ figure {
     overflow: hidden;
     margin-bottom: 40px;
 }
+/* Styles Project Section */
+
 
 main {
-    margin: auto;
-}
-
-.projects > a {
+    padding: 25px;
+    background-color: var(--mint);
+    border: var(--border);
     margin: 10px;
 }
 
-.projects {
+.myprojects {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    flex-direction: row;
+    padding-left: 100px;
+ 
+}
+
+.myprojects > a {
     justify-content: space-between;
+    align-content: center;
     margin: 20px;
 }
 
+/* adds shadow to hovered project link */
+.myprojects a:hover {
+    box-shadow: 5px 10px 8px gray;
+}
+
+/*Styles a tags to be clickable images with highlighted text description */
 #fanlink {
     background-image: url(../images/Fanpageoverlay.jpeg);
-    display: block;
-    margin: 0 auto;
-    width: 400px;
-    height: 260px;
+    display: inline;
+    width: 600px;
+    height: 340px;
     border: var(--border);
+    text-shadow: 2px 2px white;
 }
 
 #rflink {
     background-image: url(../images/optimization.jpeg);
     display: block;
-    margin: 0 auto;
     width: 400px;
     height: 260px;
     border: var(--border);
+    text-shadow: 2px 2px whitesmoke;
 
 }
 
 .wiplink {
     background-image: url(../images/WIP.jpeg);
     display: block;
-    margin: 0 auto;
     width: 400px;
     height: 260px;
     border: var(--border);
+    text-shadow: 2px 2px gray;
+}
+
+/* Styles contact section of page */
+#contact {
+    background-color: var(--lilac);
+    border: var(--border);
+    margin: 20px;
+    padding: 10px;
 }
 
 
-
+/* Aligns footer text to the center */
 footer {
     text-align: center;
 }
-
+/*Styles red heart within footer text */
 span {
     color: red;
 }
@@ -124,18 +162,21 @@ span {
 
 @media screen and (max-width: 980px) {
     header {
-        justify-content: center;
         text-align: center;
         flex-direction: column;
     }
 
-    figure, main {
+    .container {
+        text-align: center;
+    }
+
+    .container-nav {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .projectimg {
+    .projects {
         flex-basis: 100%;
         min-height: 150px;
         flex-direction: column;

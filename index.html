@@ -11,20 +11,18 @@
     <body>
         <!--Navigation links to different aspects of portfolio page-->
         <header>
-
-            <section class="intro">
-            <h1> 👋 I'm Shelby </h1>
-            <h2>Aspiring Web Developer</h2>
-            </section>
-
-            <nav class="navlinks">
-                <ul>
-                <li><a href="#about">About Me 🧸</a></li>
-                <li><a href="#projects">Projects 💻</a></li>
-                <li><a href="#contact">Contact Me 🔔</a></li>
-                </ul>
-
-            </nav>
+            <div class="container container-nav">
+            <div class="titles">
+                <h1> 👋 I'm Shelby </h1>
+                </div>
+                <nav>
+                 <ul class="navlinks">
+                    <li><a href="#about">About Me 🧸</a></li>
+                    <li><a href="#projects">Projects 💻</a></li>
+                    <li><a href="#contact">Contact Me 🔔</a></li>
+                 </ul>
+                </nav>
+           </div> 
         </header>
 
         
@@ -37,11 +35,12 @@
             
         <!--Main section of current portfolio projects-->
             
-        <main>
+        <main class="maincontent" id="projects">
             
             <h2>My Current Projects</h2>
+            <p>This is a space of my current projects and will update continually as my skill progress.</p>
 
-            <section class="projects">
+            <section class="myprojects">
             
                 <a href="https://shernandez927.github.io/big-fan/"target="_blank" id="fanlink">
                     <div class="imgoverlay">
@@ -71,9 +70,10 @@
         
             </section>
 
+        </main>
 
             <!--Contact Section-->
-            <section class="contact">
+            <section id="contact">
                 <h2>Contact Me</h2>
                 <address>
                     <a href="mailto:shelbyhernandez9876@yahoo.com">Email Me ✉️ |</a>
@@ -82,7 +82,7 @@
                 </address>
             </section>
 
-        </main>
+        
         <!--Footer with copyright-->
         <footer>
             <p> © 2022 Made with <span>❤</span> by Shelby Hernandez </p>
