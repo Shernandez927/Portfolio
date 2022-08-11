@@ -11,6 +11,8 @@
 
 ## Demo
 
+https://shernandez927.github.io/Portofino/
+
 ![screenshotimage](./assets/images/portfolioscreenshot.png)
 
 
@@ -20,6 +22,7 @@
 
 - Trophy Eyes image pulled from (https://www.alreadyheard.com/trophy-eyes-slam-dunk-festival-south-26-05-2019/)
 
+- favicon created by (https://favicon.io/)
 
 ## License
 
