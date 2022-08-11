@@ -59,7 +59,7 @@ h1 {
     text-transform: uppercase;
     font-weight: bolder;
 }
-
+/* Highlights navigation links when hovered */
 nav a:hover, nav a:focus {
     color: var(--mint);
 }
@@ -81,9 +81,9 @@ figure {
     overflow: hidden;
     margin-bottom: 40px;
 }
+
+
 /* Styles Project Section */
-
-
 main {
     padding: 25px;
     background-color: var(--mint);
@@ -105,8 +105,9 @@ main {
     margin: 20px;
 }
 
-/* adds shadow to hovered project link */
-.myprojects a:hover {
+/* adds shadow to hovered project link and contact buttons */
+.myprojects a:hover,
+address a:hover {
     box-shadow: 5px 10px 8px gray;
 }
 
@@ -144,14 +145,27 @@ main {
     background-color: var(--lilac);
     border: var(--border);
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
 }
+
+
+address a {
+    
+    border: var(--border);
+    border-radius: 0.313rem;
+    padding: 0.313rem;
+    margin: 0.625rem;
+    background-color: var(--coral);
+
+}
+
 
 
 /* Aligns footer text to the center */
 footer {
     text-align: center;
 }
+
 /*Styles red heart within footer text */
 span {
     color: red;

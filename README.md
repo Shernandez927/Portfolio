@@ -2,16 +2,16 @@
 
 ## Description
 
-- This project consists of a starter portfolio page that aims to showcase my acquired skills and highlight my best work to eventually show to potential employers.
+- This project consists of a starter portfolio page that aims to showcase my acquired skills and highlight my best work to eventually show to potential employers in the future.
 
 - This portfolio will utilize HTML, CSS, as well as flexbox, media queries, and CSS variables to demonstrate what I have learned over the course of this bootcamp.
 
-- This portfolio is currently a draft that will be continually updated as I learn more and complete more projects.
+- This portfolio is currently a draft that will be continually updated in project content and look as I learn more and complete more projects.
 
 
 ## Demo
 
-![screenshotimage](./assets/images/Portfolioscreenshot.png)
+![screenshotimage](./assets/images/portfolioscreenshot.png)
 
 
 ## Credits
