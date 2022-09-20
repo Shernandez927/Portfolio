@@ -100,8 +100,8 @@ main {
 }
 
 .myprojects > a {
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 20px;
 }
 
@@ -125,6 +125,16 @@ address a:hover {
     background-image: url(../images/optimization.jpeg);
     display: block;
     width: 400px;
+    height: 260px;
+    border: var(--border);
+    text-shadow: 2px 2px whitesmoke;
+
+}
+
+#project1link {
+    background-image: url(../images/event-easyscreenshot.jpg);
+    display: block;
+    width: 650px;
     height: 260px;
     border: var(--border);
     text-shadow: 2px 2px whitesmoke;
