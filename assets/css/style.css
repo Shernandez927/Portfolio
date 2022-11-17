@@ -1,209 +1,202 @@
 /* Color variables */
 :root {
-    --lavender: #ecd2eb;
-    --lilac: #fde3ee;
-    --mint: #c7eedb;
-    --coral: #F8C8DC;
-    --border: 3px solid black;
-
+  --lavender: #ecd2eb;
+  --lilac: #fde3ee;
+  --mint: #c7eedb;
+  --coral: #f8c8dc;
+  --border: 3px solid black;
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    text-align: center;
-    box-sizing: border-box;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
-    font-size: 18px;
-    background-color: var(--lavender);
-    margin: 0;
+  position: relative;
+  font-size: 18px;
+  background-color: var(--lavender);
+  margin: 0;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url(../images/watercolor.jpeg);
-    background-size: cover;
-    border-bottom: var(--border);
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(../images/watercolor.jpeg);
+  background-size: cover;
+  border-bottom: var(--border);
+  padding: 20px;
 }
 
 h1 {
-   font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .container-nav {
-    display: flex;
-    justify-content: space-between;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .navlinks ul {
-    display: flex;
-    padding: 0;
-
+  display: flex;
+  padding: 0;
 }
 .navlinks li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bolder;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 /* Highlights navigation links when hovered */
-nav a:hover, nav a:focus {
-    color: var(--mint);
+nav a:hover,
+nav a:focus {
+  color: var(--mint);
 }
 
 figure {
-    padding: 40px;
-    margin: 20px;
-    text-align: center;
-    background-color: var(--coral);
-    border: var(--border);
-
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  background-color: var(--coral);
+  border: var(--border);
 }
-
 
 /* Styles avatar with rounded border */
 #avatar {
-    border: var(--border);
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 40px;
+  border: var(--border);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
-
 
 /* Styles Project Section */
 main {
-    padding: 25px;
-    background-color: var(--mint);
-    border: var(--border);
-    margin: 10px;
+  padding: 25px;
+  background-color: var(--mint);
+  border: var(--border);
+  margin: 10px;
 }
 
 .myprojects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 100px;
- 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 100px;
 }
 
 .myprojects > a {
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
 }
 
 /* adds shadow to hovered project link and contact buttons */
 .myprojects a:hover,
 address a:hover {
-    box-shadow: 5px 10px 8px gray;
+  box-shadow: 5px 10px 8px gray;
 }
 
 /*Styles a tags to be clickable images with highlighted text description */
 #fanlink {
-    background-image: url(../images/Fanpageoverlay.jpeg);
-    display: inline;
-    width: 600px;
-    height: 340px;
-    border: var(--border);
-    text-shadow: 2px 2px white;
+  background-image: url(../images/Fanpageoverlay.jpeg);
+  display: inline;
+  width: 600px;
+  height: 340px;
+  border: var(--border);
+  text-shadow: 2px 2px white;
 }
 
 #rflink {
-    background-image: url(../images/optimization.jpeg);
-    display: block;
-    width: 400px;
-    height: 260px;
-    border: var(--border);
-    text-shadow: 2px 2px whitesmoke;
-
+  background-image: url(../images/optimization.jpeg);
+  display: block;
+  width: 400px;
+  height: 260px;
+  border: var(--border);
+  text-shadow: 2px 2px whitesmoke;
 }
 
 #project1link {
-    background-image: url(../images/event-easyscreenshot.jpg);
-    display: block;
-    width: 650px;
-    height: 260px;
-    border: var(--border);
-    text-shadow: 2px 2px whitesmoke;
+  background-image: url(../images/event-easyscreenshot.jpg);
+  display: block;
+  width: 650px;
+  height: 260px;
+  border: var(--border);
+  text-shadow: 2px 2px whitesmoke;
+}
 
+#project2link {
+  background-image: url(../images/gypsy.jpg);
+  display: block;
+  width: 500px;
+  height: 330px;
+  border: var(--border);
+  text-shadow: 2px 2px whitesmoke;
 }
 
 .wiplink {
-    background-image: url(../images/WIP.jpeg);
-    display: block;
-    width: 400px;
-    height: 260px;
-    border: var(--border);
-    text-shadow: 2px 2px gray;
+  background-image: url(../images/WIP.jpeg);
+  display: block;
+  width: 400px;
+  height: 300px;
+  border: var(--border);
+  text-shadow: 2px 2px gray;
 }
 
 /* Styles contact section of page */
 #contact {
-    background-color: var(--lilac);
-    border: var(--border);
-    margin: 20px;
-    padding: 20px;
+  background-color: var(--lilac);
+  border: var(--border);
+  margin: 20px;
+  padding: 20px;
 }
-
 
 address a {
-    
-    border: var(--border);
-    border-radius: 0.313rem;
-    padding: 0.313rem;
-    margin: 0.625rem;
-    background-color: var(--coral);
-
+  border: var(--border);
+  border-radius: 0.313rem;
+  padding: 0.313rem;
+  margin: 0.625rem;
+  background-color: var(--coral);
 }
-
-
 
 /* Aligns footer text to the center */
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 /*Styles red heart within footer text */
 span {
-    color: red;
+  color: red;
 }
-
 
 /* Media queries for viewport responsiveness */
 
 @media screen and (max-width: 980px) {
-    header {
-        text-align: center;
-        flex-direction: column;
-    }
+  header {
+    text-align: center;
+    flex-direction: column;
+  }
 
-    .container {
-        text-align: center;
-    }
+  .container {
+    text-align: center;
+  }
 
-    .container-nav {
-        flex-direction: column;
-    }
+  .container-nav {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .projects {
-        flex-basis: 100%;
-        min-height: 150px;
-        flex-direction: column;
-    }
-
+  .projects {
+    flex-basis: 100%;
+    min-height: 150px;
+    flex-direction: column;
+  }
 }
